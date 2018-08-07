@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирвин Свиридовский](https://up.htmlacademy.ru/htmlcss/22/user/577075).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
