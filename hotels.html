@@ -1,123 +1,174 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-
-
 	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Седона</title>
 	</head>
-
-
-	<body>
-		<header>
-			<div id="logo"></div>	
-	    		<nav>
-		    		<ul>
-		    			<li><a href="#">Информация</a></li>
-		    			<li><a href="#">Фото и видео</a></li>
-		    			<li><a href="#">Карта штата</a></li>
-		    			<li><a href="hotels.html">Гостинницы</a></li>
+	<body class="page">
+		<header class="header">
+	    		<nav class="navigation">
+		    		<ul class="navigation-list">
+		    			<li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+		    			<li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
+		    			<li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
+		    			<li class="navigation-item"><a class="navigation-link" href="#">Гостиницы</a></li>
 		    		</ul>
+		    		<a class="logo-link"><img src="" height="50" width="50" alt="sedona"></a>
 		    	</nav>	
    		</header>
-
-
-   		<main>
-   			<section class="search">
-   				
-   				<section class="infrastructure">
-   					<p>ИНФРАСТРУКТУРА:</p>
-   					<input type="checkbox" name="" id="" value="" checked>
-        			<label for="subscribe-field">БАССЕЙН</label>
-
-        			<input type="checkbox" name="" id="" value="">
-        			<label for="subscribe-field">ПАРКОВКА</label>
-
-        			<input type="checkbox" name="" id="" value="">
-        			<label for="subscribe-field">WI-FI</label>
+  		<main class="main">
+   			<div class="search">
+   				<form class="search-hotels">   				
+   				<section class="amenities">
+   					<legend class="amenities-name">Инфраструктура:</legend>
+   					<input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+        			<label class="amenities-type" for="pool">Бассейн</label>
+        			<input type="checkbox" name="parking" id="parking">
+        			<label class="amenities-type" for="parking">Парковка</label>
+        			<input type="checkbox" name="wi-fi" id="wi-fi">
+        			<label class="amenities-type" for="wi-fi">wi-fi</label>
    				</section>
-
-   				<section class="condo type">
-   					<p>ТИП ЖИЛЬЯ</p>
-   					<input type="checkbox" name="" id="" value="" checked>
-        			<label for="subscribe-field">ГОСТИННИЦА</label>
-
-        			<input type="checkbox" name="" id="" value="" checked>
-        			<label for="subscribe-field">МОТЕЛЬ</label>
-
-        			<input type="checkbox" name="" id="" value="" checked>
-        			<label for="subscribe-field">АПАРТАМЕНТЫ</label>	
-   				</section>
-
+   				<section class="condo">
+   					<legend class="condo-name">Тип жилья</legend>
+   					<input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+	       			<label class="condo-type" for="hotel">Гостиница</label>
+        			<input class="checkbox" type="checkbox" name="motel" id="motel" checked>
+        			<label class="condo-type" for="motel">Мотель</label>
+        			<input class="checkbox" type="checkbox" name="apartments" id="apartments" checked>
+        			<label class="condo-type" for="apartments">Апартаменты</label>
+  				</section>
    				<section class="cost">
 		   			<p>СТОИМОСТЬ В СУТКИ (Р): </p>	
 		   				<span class="RuB">ОТ 0 | ДО 3000</span>			
 		   					<input type="range" min="0" max="3000" step="1" value="100">
-		   						<button type="button">ПОКАЗАТЬ</button>					
+		   						<button class="cost-btn" type="submit">ПОКАЗАТЬ</button>					
    				</section>
-
-   			</section>
-
-   			<section class="filters">
-   					
-   			</section>
-
-   			<section class="overview">
-   				
-   				<section class="amara">
-   					<img src="">
-   						<h2>AMARA RESORT & SPA</h2>
-		   					<p>ГОСТИННИЦА</p>
-		   					<p>ОТ 4000 Р.</p>
-			   					<button type="button">ПОДРОБНЕЕ</button>
-			   					<button type="button">ЗАБРОНИРОВАТЬ</button>
-			   						<!--stars-->
-			   						<!--rating-->	
-   				</section>
-
-   				<section class="quail">
-   					<img src="">
-   						<h2>DESERT QUAIL INN</h2>
-		   					<p>МОТЕЛЬ</p>
-		   					<p>ОТ 3000 Р.</p>
-			   					<button type="button">ПОДРОБНЕЕ</button>	
-			   					<button type="button">ЗАБРОНИРОВАТЬ</button>
-			   						<!--stars-->
-			   						<!--rating-->
-   				</section>
-
-   				<section class="diablo">
-   					<img src="">
-   						<h2>VILLAS AT POCO DIABLO</h2>
-		   					<p>АПАРТАМЕНТЫ</p>
-		   					<p>ОТ 2000 Р.</p>
-			   					<button type="button">ПОДРОБНЕЕ</button>
-			   					<button type="button">ЗАБРОНИРОВАТЬ</button>
-			   						<!--stars-->
-			   						<!--rating-->	
-   				</section>
-
-   			</section>
-
+   				</form>
+   			</div>
+  			<div class="search-result">
+   					<span class="search-result-amount">
+   						Найдено: <output>3</output>
+   					</span>
+   					<span class="search-result-sort">
+   						Сортировка:
+   					</span>
+   					<ul class="sort-list">
+   						<li class="sort-item sort-item-active"><a class="sort-link" href="#">По цене</a></li>
+   						<li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
+   						<li class="sort-item"><a class="sort-link" href="#">По рейтингу</a></li>
+   					</ul>
+   					<ul class="filter">
+   						<li class="filter-raise"><button class="filter-btn" type=""></button></li>
+   						<li class="filter-fall"><button class="filter-btn"></button></li>
+   					</ul>
+   			</div>
+   			<ul class="hotels-list">   				
+   				<li class="Amara">
+   					<img src="#" height="50" width="50" alt="sedona">
+   					<div class="Amara-description">
+   						<a class="amara-link" href="#">
+   							<h3 class="amara-title">
+   								Amara resort & Spa
+   							</h3>  						
+   						</a>
+   						<div class="Amara-details">
+   							<span class="amara-type">Гостиница</span>
+   							<span class="amara-price">от 4000 р.</span>
+   						</div>
+						<div>
+							<a href="amara-full-description">Подробнее</a>
+							<a href="amara-booking">Забронировать</a>
+						</div>   						
+   					</div>
+   					<div class="amara-rate">
+   						<ul class="amara-stars-list">
+   							<li class="amara-stars-item"></li>
+   							<li class="amara-stars-item"></li>
+   							<li class="amara-stars-item"></li>
+   							<li class="amara-stars-item"></li>
+   						</ul>
+   						<span class="rating">
+   							<output>
+   								Рейтинг: 8,5
+   							</output>
+   						</span>
+   					</div>
+   				</li>
+   				<li class="Quail">
+   					<img src="#" height="50" width="50" alt="sedona">
+   					<div class="Quail-description">
+   						<a class="Quail-link" href="#">
+   							<h3 class="Quail-title">
+   								Desert Quail Inn
+   							</h3>  						
+   						</a>
+   						<div class="Quail-details">
+   							<span class="Quail-type">Мотель</span>
+   							<span class="Quail-price">от 3000 р.</span>
+   						</div>
+						<div>
+							<a href="Quail-full-description">Подробнее</a>
+							<a href="Quail-booking">Забронировать</a>
+						</div>
+   					</div>
+   					<div class="Quail-rate">
+   						<ul class="Quail-stars-list">
+   							<li class="Quail-stars-item"></li>
+   							<li class="Quail-stars-item"></li>
+   							<li class="Quail-stars-item"></li>
+   						</ul>
+   						<span class="rating">
+   							<output>
+   								Рейтинг: 8,9
+   							</output>
+   						</span>
+   					</div>
+   				</li>
+   				<li class="Diablo">
+   					<img src="#" height="50" width="50" alt="sedona">
+   					<div class="Diablo-description">
+   						<a class="Diablo-link">
+   							<h3 class="Diablo-title">
+   								Villa at Poco Diablo
+   							</h3>  						
+   						</a>
+   						<div class="Diablo-details">
+   							<span class="Diablo-type">Апартаменты</span>
+   							<span class="Diablo-price">от 2000 р.</span>
+   						</div>
+						<div>
+							<a href="Diablo-full-description">Подробнее</a>
+							<a href="Diablo-booking">Забронировать</a>
+						</div>
+   					</div>
+   					<div class="Diablo-rate">
+   						<ul class="Diablo-stars-list">
+   							<li class="Diablo-stars-item"></li>
+   							<li class="Diablo-stars-item"></li>
+   							<li class="Diablo-stars-item"></li>
+   						</ul>
+   						<span class="rating">
+   							<output>
+   								Рейтинг: 9,2	
+   							</output>
+   						</span>
+   					</div>
+   				</li>
+   			</ul>
    		</main>
-
-
-   		<footer>
-
+   		<footer class="footer">
 			<a href="#" class="hashtag">#visitsedona</a>
-
-			<ul>
-	    		<li><a href="#">Twitter</a></li>
-	    		<li><a href="#">Facebook</a></li>
-	    		<li><a href="#">Youtube</a></li>
+			<ul class="social-list">
+	    		<li class="social-list-item"><a href="#">Twitter</a></li>
+	    		<li class="social-list-item"><a href="#">Facebook</a></li>
+	    		<li class="social-list-item"><a href="#">Youtube</a></li>
 	    	</ul>
-			
-			<section class="copyright">
-				<p>Website by</p>
-					<a href="#" class="copyright_link"></a>
-				<img src="#" alt="Oops" width="0" height="0">	
-			</section>
-
+			<div class="copyright">
+				<span>Website by</span>
+					<a href="#" class="copyright_link">
+						<img src="#" height="50" width="50" alt="sedona">
+					</a>	
+			</div>
 		</footer>
 	</body>
 </html>
