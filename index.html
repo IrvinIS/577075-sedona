@@ -85,18 +85,40 @@
 				<b class="search-hotels-question">ЗАИНТЕРЕСОВАЛИСЬ?</b>
 				<p class="search-hotels-text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
 				<button class="search-hotels-btn" type="button">Поиск гостиницы в Седоне</button>
-				<form class="search-hotels-form"></form>
 			</div>	
 			<section class="map">
-				<h6 class="visually-hidden">Карта</h6>					
+				<h6 class="visually-hidden">Карта</h6>
+				<form class="search">
+					<fieldset class="search-check-in">
+						<label for="check-in">Дата заезда:</label>
+						<input type="text" id="check-in" name="search" placeholder="24 апреля 2017">
+					</fieldset>
+					<fieldset class="search-check-out">
+						<label for="check-out">Дата выезда:</label>
+						<input type="text" id="check-in" name="search" placeholder="04 июля 2017">
+					</fieldset>
+					<fieldset class="search-amount-people">
+						<label for="adults">Взрослые</label>
+						<button class="icon-minus"></button>
+						<input type="number" name="adults" id="adults" placeholder="2">
+						<button class="icon-plus btn-grey"></button>
+						<label for="kids">Дети</label>
+						<button class="icon-minus btn-grey"></button>
+						<input type="number" name="kids" id="kids" placeholder="0">
+						<button class="icon-plus"></button>
+					</fieldset>
+					<fieldset>
+						<button class="btn-blue" type="submit">Найти</button>
+					</fieldset>
+				</form>
 			</section>		
 		</main>
 		<footer class="footer">
 			<a href="#" class="hashtag">#visitsedona</a>
 			<ul class="social-list">
-	    		<li class="social-list-item"><a href="#">Twitter</a></li>
-	    		<li class="social-list-item"><a href="#">Facebook</a></li>
-	    		<li class="social-list-item"><a href="#">Youtube</a></li>
+	    		<li class="social-list-item"><a href="https://twitter.com/" aria-label="Твиттер">Twitter</a></li>
+	    		<li class="social-list-item"><a href="https://twitter.com/" aria-label="Фейсбук">Facebook</a></li>
+	    		<li class="social-list-item"><a href="https://twitter.com/" aria-label="ВКонтакте">ВКонтакте</a></li>
 	    	</ul>
 			<div class="copyright">
 				<span>Website by</span>
