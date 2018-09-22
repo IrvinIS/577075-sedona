@@ -396,6 +396,10 @@ html {
   min-height: 593px;
 }
 
+.map iframe {
+  border: 0;
+}
+
 .search {
   display: none;
   position: absolute;
