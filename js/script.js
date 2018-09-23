@@ -2,7 +2,7 @@ var link = document.querySelector(".search-hotels-btn");
   var popup = document.querySelector(".modal");
   var search = popup.querySelector("#check-in");
   var search2 = popup.querySelector("#check-out");
-  var submitBtn = popup.querySelector('.btn-blue');
+  var submitBtn = popup.querySelector(".btn-blue");
 
   popup.classList.remove("modal-show");
 
